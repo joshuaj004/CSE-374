@@ -1,0 +1,18 @@
+Script started on Fri 16 Dec 2016 04:29:14 PM PST
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ echo "glorp"
+glorp
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ echo "glorp" > glorp
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ cat glorp
+glorp
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ ls
+glorp
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ grep "glorp" glorp
+[01;31m[Kglorp[m[K
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ alias glorp=
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ glorp
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ !!
+glorp
+]0;josh@josh: ~/Documents/CSE-374/HW2[01;32mjosh@josh[00m:[01;34m~/Documents/CSE-374/HW2[00m$ exit
+exit
+
+Script done on Fri 16 Dec 2016 04:29:53 PM PST
