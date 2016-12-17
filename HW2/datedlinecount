@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ $# -lt 2 ]; then
+    echo "Datedlinecount must be used with at least 2 arguments" 1>&2
+    exit 1
+fi
+
+filename=$1
+total=0
+
+date > "$filename"
+
+shift
+
+while (( "$#" )); do
+    for ((a=1; a <= $( wc -l < $1 ); a++)); do
+	(( total++ ))
+    done
+    wc -l "$1" >> "$filename"
+
+shift
+
+done
+
+echo "$total" "total" >> "$filename"
