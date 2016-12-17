@@ -1,0 +1,19 @@
+1. It prints the information of a file (or multiple files), including the counts of newlines, words, and bytes
+
+2.   44   75 2477 /etc/passwd
+
+3. Kill
+
+4. It lists where the home directories are.
+
+5. $PATH and $LANG. $Path is important so that you don't have to specify the path for certain programs are each time they are needed to be run. $LANG is so that programs know which language to use.
+
+6. find
+
+7. which locates a command, rather than a file.
+
+8. The former command prints the "Hello World" input to the file something, whereas the latter prints to hte screen.
+
+9. "More text" will overwrite the "Hello World" in the something file.
+
+10. This will append "yet more text" to the something file.

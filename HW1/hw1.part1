@@ -1,0 +1,57 @@
+josh@josh:~/Documents/CSE-374/HW1$ echo "Hello World"
+Hello World
+josh@josh:~/Documents/CSE-374/HW1$ sudo paswd josh
+[sudo] password for josh: 
+sudo: paswd: command not found
+josh@josh:~/Documents/CSE-374/HW1$ sudo passwd josh
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+josh@josh:~/Documents/CSE-374/HW1$ date
+Fri Dec 16 15:22:02 PST 2016
+josh@josh:~/Documents/CSE-374/HW1$ echo "File paths and directory navigation"
+File paths and directory navigation
+josh@josh:~/Documents/CSE-374/HW1$ pwd
+/home/josh/Documents/CSE-374/HW1
+josh@josh:~/Documents/CSE-374/HW1$ cd ~
+josh@josh:~$ pwd ~
+/home/josh
+josh@josh:~$ ls
+Desktop    Downloads         lec2.history  Pictures  Templates
+Documents  examples.desktop  Music         Public    Videos
+josh@josh:~$ mkdir temp
+josh@josh:~$ mv /temp files
+mv: cannot stat '/temp': No such file or directory
+josh@josh:~$ mv temp files
+josh@josh:~$ cd files/
+josh@josh:~/files$ ls
+josh@josh:~/files$ date > now
+josh@josh:~/files$ cp now before
+josh@josh:~/files$ ls -l
+total 8
+-rw-r--r-- 1 josh josh 29 Dec 16 15:24 before
+-rw-r--r-- 1 josh josh 29 Dec 16 15:24 now
+josh@josh:~/files$ touch temp
+josh@josh:~/files$ mv temp test
+josh@josh:~/files$ cd ..
+josh@josh:~$ rm -r files
+josh@josh:~$ echo "Permissions"
+Permissions
+josh@josh:~$ echo "It's a secret" > secretfile
+josh@josh:~$ chmod u=rx secretfile 
+josh@josh:~$ ls -l
+total 52
+drwxr-xr-x 2 josh josh 4096 Dec 16 01:59 Desktop
+drwxr-xr-x 4 josh josh 4096 Dec 16 15:19 Documents
+drwxr-xr-x 2 josh josh 4096 Dec 16 01:59 Downloads
+-rw-r--r-- 1 josh josh 8980 Dec 16 01:41 examples.desktop
+-rw-r--r-- 1 josh josh 1442 Dec 16 02:15 lec2.history
+drwxr-xr-x 2 josh josh 4096 Dec 16 01:59 Music
+drwxr-xr-x 2 josh josh 4096 Dec 16 01:59 Pictures
+drwxr-xr-x 2 josh josh 4096 Dec 16 01:59 Public
+-r-xr--r-- 1 josh josh   14 Dec 16 15:25 secretfile
+drwxr-xr-x 2 josh josh 4096 Dec 16 01:59 Templates
+drwxr-xr-x 2 josh josh 4096 Dec 16 01:59 Videos
+josh@josh:~$ cat "more text" >> secretfile 
+bash: secretfile: Permission denied
+
