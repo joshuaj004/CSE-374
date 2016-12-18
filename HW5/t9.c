@@ -5,8 +5,26 @@
 void file_handler(char* file_name);
 char* word_convert(char* word);
 
+typedef struct node {
+  char* word;
+  struct node* next_word;
+  struct node* children[10];
+} node;
+
+void addword(char* word, node root) {
+  printf("So far so good\n");
+  node curr = root;
+  for (int i = 0; i < strlen(word); i++) {
+    printf("%c ", word[i]);
+  }
+  printf("\n");
+}
+
+
 int main(int argc, char** argv) {
   file_handler(argv[1]);
+  node root;
+  addword("573", root);
   return 0;
 }
 
@@ -16,7 +34,7 @@ void file_handler(char* file_name) {
 
   while (fgets(line, sizeof(line), file)) {
     char* t9_word = word_convert(line);
-    printf("%s%s\n\n", line, t9_word);
+    //printf("%s%s\n\n", line, t9_word);
   }
 
   fclose(file);
